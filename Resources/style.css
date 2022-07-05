@@ -1,0 +1,143 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    background-image: url('/Resources/HVS outline light.png');
+    background-position: 110%;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+a{
+    text-decoration: none;
+    color: #75ab38;
+}
+h1, h2, h3, h4, h5, h6{
+    width: 100%;
+    color: #75ab38;
+    font-weight: 100;
+    margin: 5px 0px;
+}
+h1{
+    color: #555;
+    font-size: 24px;
+}
+h2{ 
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+button{
+    background: #75ab38;
+    color: #fff;
+    padding: 9px 20px;
+    height: 2.25rem;
+    border: none;
+    border-radius: 5px;
+}
+.card{
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    min-height: 100px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items:flex-start;
+    vertical-align: bottom;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    background-color: #fff;
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 4px #eee;
+}
+.card.tall{
+    padding-top: 150px;
+}
+.card.wide{
+    width: 100%;
+}
+.card .cta{
+    margin: 10px;
+    width: 150px;
+}
+.card button{
+    margin: 10px;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.BG-Grey{background-color: #444; color: #ccc;}
+.Logo{
+    float: left; 
+    margin-right: 10px;
+    background-image: url('/Resources/hvs-logo.png');
+    background-size: 80px;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+.notAvalible{
+    margin: 30%;
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.TXT-Dark{color: #333;}
+
+#footer{
+    position: fixed;
+    bottom: 5px;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+    color: #999999;
+}
+@media (prefers-color-scheme: Dark) {
+    html{
+        background-color: #333;
+        color: #999999;
+        background-image: url('/Resources/HVS outline dark.png');
+    }
+    h1{ color: #fcfcfc;}
+    .card{
+        color: #ccc;
+        background-color: #555;
+        box-shadow: 0px 0px 4px #111;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+    .row{ 
+        flex-direction: column;
+        max-width: 100%;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .row{ flex-direction: column;}
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .row{ flex-direction: row;}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
