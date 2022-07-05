@@ -83,7 +83,8 @@ button{
     height: 80px;
 }
 .notAvalible{
-    margin: 20%;
+    margin-top: 20%;
+    margin-left:20%;
     text-align: left;
 }
 .row{
